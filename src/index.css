@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --studio-bg: #0A0D12;
+    --studio-surface: #121720;
+    --studio-elevated: #181F2B;
+    --studio-border: #232C3B;
+    --studio-fg: #F1F5F9;
+    --studio-muted: #94A3B8;
+    --studio-accent: #38BDF8;
+    --studio-cta: #2563EB;
+  }
+
+  html,
+  body {
+    background-color: var(--studio-bg);
+    color: var(--studio-fg);
+    font-family: var(--font-sans);
+    letter-spacing: 0.005em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ATS-Safe Paper Preview Font Stacks */
+.ats-font-times {
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+.ats-font-arial {
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+}
+
+/* Subtle custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232C3B;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

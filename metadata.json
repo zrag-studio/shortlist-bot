@@ -1,0 +1,6 @@
+{
+  "name": "Shortlist Studio",
+  "description": "Guided step-by-step ATS resume builder, 3-stage JD keyword miner, and STAR interview prep Telegram Mini App for MBA Finance, Marketing, HR, Equity Research, and Tech freshers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

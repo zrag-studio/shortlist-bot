@@ -1,0 +1,13 @@
+name = "shortlist-studio"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-03-01"
+
+# Free Cloudflare D1 SQLite Database (5M reads/day, 100k writes/day free)
+[[d1_databases]]
+binding = "DB"
+database_name = "shortlist-studio-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Free Cloudflare Workers AI (10,000 Neurons/day free — no external API key needed!)
+[ai]
+binding = "AI"
